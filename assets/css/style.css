@@ -1,0 +1,117 @@
+#container {
+    position: relative;
+    height: 100vh;
+    background-image: url("../img/ハイビスカス.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 50px;
+    padding: 30px;
+}
+
+#startBtn {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    font-size: 40px;
+    padding: 20px 30px;
+    color: #fff;
+    background-color: #FF4F02;
+    border: 3px solid #fff;
+    border-radius: 20%;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+#startBtn:hover {
+    opacity: 1;
+}
+
+.over {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+.omikuji {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.omikuji img {
+    margin-top: 100px;
+    animation: rotate 3s ease-in-out infinite alternate;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.stopBtn {
+    width: 50%;
+    height: 50%;
+    font-size: 40px;
+    color: #fff;
+    background-color: #33CCFF;
+    margin-top: 20px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.stopBtn:hover {
+    opacity: 1;
+}
+
+.result {
+    position: relative;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    height: 40%;
+    width: 40%;
+    background-color: #fff;
+    border: 20px solid gold;
+}
+
+span {
+    position: absolute;
+    margin-top: 30px;
+    font-size: 100px;
+    font-family: 'HanziPen TC','Yu Mincho Light','YuMincho','Yu Mincho','游明朝体',sans-serif;
+}
+
+.close {
+    position: absolute;
+    bottom: 10%;
+    font-size: 15px;
+    background-color: #FF4F02;
+    color: #fff;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+.word {
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    font-size: 60px;
+    font-family: 'HanziPen TC','Yu Mincho Light','YuMincho','Yu Mincho','游明朝体',sans-serif;
+    color: red;
+    transform: rotate(30deg);
+}
